@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'androi';
+    src: url('../fontes/idroid.otf'); format ('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {Curiosidades de Tecnologia
+    --cor1: blue;
+    --cor2: aqua;
+    --cor3: red;
+    --cor4: green;
+    --fonte-androi: 'androi';
+    --fonte-padrao: arial, sans-serif
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-androi);
+}
+
+a.externo::after {
+    content: \1F517;
+}
+
+header {
+    background-image: linear-gradient(to bottom, green, rgb(0, 212, 0));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+header > h1 {
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+    font-weight: normal;
+
+header > p  {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    background-color: var(--cor4);
+}
+
+nav > a:hover {
+    background-color: blue;
+    transition-duration: 1s;
+}
+
+main h2 {
+    font-family: var(--fonte-androi);
+    background-image: linear-gradient(to right, green, transparent);
+}
+
+article {
+    background-color: white;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+main img.pq {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1em;
+    font-size: 1em;
+}
+
+main strong {
+    color: green;
+    font-weight: bold;
+    background-color: aqua;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+div.video {
+    background-color: blue;
+    margin-bottom: 30px;
+    margin: 0px -20px;
+    padding: 20px;
+    position: relative;
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: rgb(2, 109, 109);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.514);
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: blue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer >p >a {
+    color: brown;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}

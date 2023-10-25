@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: aqua;
+}
+
+#prin {
+    text-align: center;
+    background-color: black;
+    color: blueviolet;
+}
+
+h2 {
+    color: aqua;
+}
+
+.basico {
+    color: white;
+}
+
+.medio {
+    color: gray;
+    background-color: black;
+}
